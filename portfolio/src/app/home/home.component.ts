@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import{ Data } from '../models/data.model';
+import data from '../../assets/data.json';
+
 declare var $:any;
 
 @Component({
@@ -8,6 +11,8 @@ declare var $:any;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  usersData: Data = data;
 
   constructor() { }
 
